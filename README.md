@@ -19,16 +19,23 @@
     2. Системные требования и инструкции по установке на нашем сервере.
 
 Requirements:
+
     1. php 7.1.9
+
     2. mysql:
+
         - table `links` in DATABASE with structure:
+
             CREATE TABLE `links` (
             `id` int(11) NOT NULL,
             `long_link` text,
             `short_link` text
             ) ENGINE=MyISAM DEFAULT CHARSET=utf8; 
+
         - SERVER, PORT, DATABASE, USER, PASSWORD in router.php
+
     3. src/client.html must be in the same directory like router.php
+    
 Run:
 
     - run php dev web-server: /path/to/php -S localhost:80 src/router.php
